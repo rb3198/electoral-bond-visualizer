@@ -1,0 +1,32 @@
+{
+  "name": "electoral-bond-visualizer",
+  "version": "0.0.1",
+  "description": "Visualizer for electoral bond data released by SBI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rb3198/electoral-bond-visualizer.git"
+  },
+  "keywords": [
+    "electoral",
+    "bonds",
+    "bonds",
+    "sbi",
+    "data",
+    "d3",
+    "visualization"
+  ],
+  "contributors": [
+    "rb3198",
+    "hiteshsoneta"
+  ],
+  "author": "rb3198",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rb3198/electoral-bond-visualizer/issues"
+  },
+  "homepage": "https://github.com/rb3198/electoral-bond-visualizer#readme"
+}
