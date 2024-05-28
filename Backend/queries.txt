@@ -1,0 +1,30 @@
+
+INSERT INTO transactions (
+    reference_no, journal_date, purchase_date, expiry_date, 
+    purchaser_name, prefix, bond_number, denominations, issue_branch_code, 
+    issue_teller, status, encashment_date, party_name, party_account_no, 
+    pay_branch_code, pay_teller
+)
+SELECT 
+    p.reference_no, 
+    p.journal_date, 
+    p.purchase_date, 
+    p.expiry_date, 
+    p.purchaser_name, 
+    p.prefix, 
+    p.bond_number, 
+    p.denominations, 
+    p.issue_branch_code, 
+    p.issue_teller, 
+    p.status, 
+    r.encashment_date, 
+    r.party_name, 
+    r.party_account_no, 
+    r.pay_branch_code, 
+    r.pay_teller
+FROM 
+    purchase p
+JOIN 
+    redemption r
+ON 
+    p.prefix = r.prefix AND p.bond_number = r.bond_number;
